@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+env/
+venv/
+.venv/
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.swp
+.DS_Store
+
+# Logs
+*.log
+
+# Model and dataset artifacts (do not commit large model weights and produced artifacts)
+visual_wake_word/retrained_models/
+visual_wake_word/trained_models/
+visual_wake_word/retrain_images/
+**/*.h5
+**/*.tflite
+**/*.md5
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS files
+Thumbs.db
+ehthumbs.db
