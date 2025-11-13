@@ -22,6 +22,11 @@ venv/
 visual_wake_word/retrained_models/
 visual_wake_word/trained_models/
 visual_wake_word/retrain_images/
+visual_wake_word/test_images/
+TinyMobileNet/retrained_models/
+TinyMobileNet/trained_models/
+TinyMobileNet/retrain_images/
+TinyMobileNet/test_images/
 **/*.h5
 **/*.tflite
 **/*.md5
