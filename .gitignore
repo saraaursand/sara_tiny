@@ -26,6 +26,7 @@ TinyMobileNet/test_images/
 test_images/
 training_images/
 trained_models/
+retrain_images/
 **/*.h5
 **/*.tflite
 **/*.md5
