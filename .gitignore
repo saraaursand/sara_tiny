@@ -21,8 +21,8 @@ venv/
 # Model and dataset artifacts (do not commit large model weights and produced artifacts)
 TinyMobileNet/retrained_models/
 TinyMobileNet/trained_models/
-TinyMobileNet/retrain_images/
-TinyMobileNet/test_images/
+MobileNet/retrained_models/
+MobileNet/trained_models/
 test_images/
 training_images/
 trained_models/
