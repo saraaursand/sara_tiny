@@ -15,7 +15,7 @@ from vww_model import mobilenet_v1
 import tensorflow as tf
 assert tf.__version__.startswith('2')
 
-IMAGE_SIZE = 96
+IMAGE_SIZE = 28
 BATCH_SIZE = 32
 EPOCHS = 20
 

@@ -10,16 +10,16 @@ using re-training.
 import os
 
 from absl import app
-from vww_model import mobilenet_v1
+from MobileNet_model import mobilenet_v1
 
 import tensorflow as tf
 assert tf.__version__.startswith('2')
 
-IMAGE_SIZE = 244
+IMAGE_SIZE = 224
 BATCH_SIZE = 32
 EPOCHS = 20
 
-BASE_DIR = os.path.join(os.getcwd(), '../train_images/COCOtraining_images')
+BASE_DIR = os.path.join(os.getcwd(), '../training_images')
 
 def main(argv):
   if len(argv) >= 2:
@@ -62,7 +62,8 @@ def main(argv):
   if len(argv) >= 3:
     model.save(argv[2])
   else:
-    model.save('trained_models/vww_96.h5')
+    model.save(f'retrained_models/MobileNetCOCO.h5')
+    #model.save(f'retrained_models/MobileNetMNIST.h5')
 
 
 def train_epochs(model, train_generator, val_generator, epoch_count,

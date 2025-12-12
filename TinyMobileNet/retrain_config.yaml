@@ -1,8 +1,9 @@
+# Re-train set configuration
 MODEL_PATH: ./trained_models/vww_96.h5
 IMAGE_SIZE: 96
 BATCH_SIZE: 32
 EPOCHS: 100
-BASE_DIR: ./retrain_images/mnist
+BASE_DIR: ../retrain_images/5900_mnist
 LEARNING_RATE: 0.0001
 
 # conv2d layers : [1, 7, 13, 19, 25, 31, 37, 43, 49, 55, 61, 67, 73, 79]
@@ -10,15 +11,21 @@ LEARNING_RATE: 0.0001
 # dense layer : [84]
 
 TRAINABLE_LAYERS:
-  - 19
-  - 29
-  - 37
-  - 40
+  - 79
+  - 84
+  - 73
+  - 1
+  - 7
 
 EARLY_STOPPING:
   ENABLED: true
   MONITOR: "val_accuracy"
-  PATIENCE: 5
+  PATIENCE: 10
   MIN_DELTA: 0.0001
   MODE: "max"
   RESTORE_BEST_WEIGHTS: true
+
+  
+# Test set configuration
+TEST_IMAGES_DIR: ../test_images/zero_not_zero
+TEST_OUTPUT_DIR: ../model_testig/tiny
