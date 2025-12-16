@@ -1,4 +1,4 @@
-# Tin-yMobileNet (sara_tiny)
+# Tiny-MobileNet (sara_tiny)
 
 This repository contains code for pre-training, re-training and testing of the Tiny-MobileNet model.
 
